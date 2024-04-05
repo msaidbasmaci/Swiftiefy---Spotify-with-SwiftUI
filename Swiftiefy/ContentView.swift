@@ -18,7 +18,9 @@ struct ContentView: View {
         ScrollView{
             VStack {
                 ForEach(products) { product in
-                    Text(product.title)}
+                    Text(product.title)
+                        .foregroundStyle(.spotifyGreen)
+                }
             }
             }
             .padding()
