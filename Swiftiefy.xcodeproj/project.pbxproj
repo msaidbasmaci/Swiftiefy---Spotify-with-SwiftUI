@@ -20,6 +20,8 @@
 		537668B22BBDB48300684484 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537668B12BBDB48300684484 /* ContentView.swift */; };
 		537668B42BBDB48600684484 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 537668B32BBDB48600684484 /* Assets.xcassets */; };
 		537668B82BBDB48600684484 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 537668B72BBDB48600684484 /* Preview Assets.xcassets */; };
+		53AD0D6E2BC18240002E93DE /* SpotifyCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AD0D6D2BC18240002E93DE /* SpotifyCategoryCell.swift */; };
+		53AD0D722BC18A0E002E93DE /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AD0D712BC18A0E002E93DE /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		537668B32BBDB48600684484 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		537668B52BBDB48600684484 /* Swiftiefy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Swiftiefy.entitlements; sourceTree = "<group>"; };
 		537668B72BBDB48600684484 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		53AD0D6D2BC18240002E93DE /* SpotifyCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyCategoryCell.swift; sourceTree = "<group>"; };
+		53AD0D712BC18A0E002E93DE /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		531DA3102BC04B1D005C1082 /* Spotify */ = {
 			isa = PBXGroup;
 			children = (
+				53AD0D702BC189F9002E93DE /* Models */,
 				531DA3122BC04B38005C1082 /* Components */,
 				531DA3112BC04B33005C1082 /* Core */,
 			);
@@ -71,6 +76,7 @@
 		531DA3122BC04B38005C1082 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				53AD0D6D2BC18240002E93DE /* SpotifyCategoryCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -123,6 +129,14 @@
 				537668B72BBDB48600684484 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		53AD0D702BC189F9002E93DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				53AD0D712BC18A0E002E93DE /* Category.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +220,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				535A71182BBF08C0000F7B58 /* ImageLoaderView.swift in Sources */,
+				53AD0D722BC18A0E002E93DE /* Category.swift in Sources */,
+				53AD0D6E2BC18240002E93DE /* SpotifyCategoryCell.swift in Sources */,
 				535A711C2BBF1E0D000F7B58 /* DatabaseHelper.swift in Sources */,
 				531DA3142BC04B61005C1082 /* SpotifyHomeView.swift in Sources */,
 				537668B22BBDB48300684484 /* ContentView.swift in Sources */,
@@ -356,7 +372,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -394,7 +410,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
